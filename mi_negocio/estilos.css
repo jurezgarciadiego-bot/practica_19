@@ -1,0 +1,267 @@
+body {
+   font-family: Arial;
+   background-color: lightblue;
+   box-sizing: border-box;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+header {
+   background-color: rgb(19, 152, 240);
+   color: white;
+   text-align: center;
+   padding: 15px;
+}
+
+nav {
+   background-color: black;
+   padding: 10px;
+}
+
+nav a {
+   color: white;
+   margin: 10px;
+   display: inline-block;
+   padding: 10px 14px;
+   text-decoration: none;
+}
+
+nav a:hover,
+nav a.activo {
+   background-color: #1f6f8b;
+   color: white;
+   border-radius: 6px;
+}
+
+section {
+   background-color: lightblue;
+   margin: 15px;
+   padding: 10px;
+}
+
+.menu {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   flex-wrap: wrap;
+   margin: 20px 0;
+}
+
+.menu a {
+   color: white;
+   text-decoration: none;
+   padding: 10px 14px;
+   background-color: black;
+   border-radius: 4px;
+}
+
+.menu a:hover,
+.menu a.activo {
+   background-color: #1f6f8b;
+}
+
+.presentacion {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 25px;
+   flex-wrap: wrap;
+   max-width: 900px;
+   margin: 25px auto;
+   padding: 15px;
+}
+
+.texto-presentacion {
+   flex: 1 1 280px;
+   min-width: 0;
+}
+
+.imagen-negocio {
+   width: 280px;
+   max-width: 100%;
+   height: auto;
+   border-radius: 5px;
+}
+
+.contenedor-productos {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+   max-width: 1100px;
+   margin: 20px auto;
+   padding: 15px;
+}
+
+.producto {
+   padding: 15px;
+   border: 1px solid gray;
+   border-radius: 8px;
+   background-color: white;
+   text-align: center;
+   box-sizing: border-box;
+}
+
+.producto img {
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+   display: block;
+}
+
+.producto .precio {
+   font-weight: bold;
+   color: #800020;
+}
+
+footer {
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 10px;
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 15px;
+   background-color: lightblue;
+}
+
+caption {
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+
+th, td {
+   border: 1px solid gray;
+   padding: 10px;
+   text-align: left;
+}
+
+th {
+   background-color: lightblue;
+}
+
+form {
+   margin-top: 15px;
+   padding: 15px;
+   background-color: lightblue;
+}
+
+fieldset {
+   border: 1px solid gray;
+   padding: 15px;
+}
+
+label {
+   display: block;
+   margin-top: 12px;
+}
+
+input, select, textarea {
+   width: 100%;
+   box-sizing: border-box;
+   padding: 8px;
+   margin-top: 5px;
+}
+
+button {
+   margin-top: 15px;
+   padding: 10px;
+   background-color: lightblue;
+   border: 1px solid gray;
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: skyblue;
+}
+
+@media (max-width: 900px) {
+   .contenedor-productos {
+       grid-template-columns: repeat(2, 1fr);
+   }
+}
+@media (max-width: 600px) {
+
+   .menu {
+       flex-direction: column;
+       align-items: center;
+       gap: 10px;
+   }
+
+   .menu a {
+       width: 90%;
+       max-width: 300px;
+       text-align: center;
+   }
+
+   .presentacion {
+       flex-direction: column;
+       gap: 15px;
+       margin: 15px auto;
+       padding: 10px;
+   }
+
+   .texto-presentacion {
+       flex: none;
+       width: 100%;
+       text-align: center;
+   }
+
+   .imagen-negocio {
+       width: 100%;
+       max-width: 320px;
+       height: auto;
+   }
+
+   .contenedor-productos {
+       grid-template-columns: 1fr;
+       gap: 15px;
+       margin: 15px auto;
+       padding: 10px;
+   }
+
+   .producto {
+       width: 100%;
+   }
+   body {
+       padding: 10px;
+   }
+
+   h1 {
+       font-size: 26px;
+       line-height: 1.2;
+   }
+   h2 {
+       font-size: 22px;
+       line-height: 1.3;
+   }
+   p {
+       font-size: 16px;
+   }
+}
+
+.resumen-compra {
+    max-width: 560px;
+    margin: 24px auto;
+    padding: 20px;
+    border: 2px solid #155a91;
+    border-radius: 10px;
+}
+
+.resumen-compra button {
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+input[type="number"] {
+    max-width: 90px;
+    padding: 7px;
+}
+
+
+
+

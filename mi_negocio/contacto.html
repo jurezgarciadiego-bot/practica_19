@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <title>Contacto</title>
+ <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+
+ <header>
+     <h1>Consultorio Pichas</h1>
+     <p>Cuidamos tu salud</p>
+     <img src="imagenes/doctor.jpg" width="150" alt="Doctor">
+ </header>
+ <nav>
+     <a href="index.html">Inicio</a>
+     <a href="nosotros.html">Nosotros</a>
+     <a href="productos.html">Servicios</a>
+     <a href="informacion.html">Información</a>
+     <a href="contacto.html"class="activo">Contacto</a>
+ </nav>
+ <section>
+     <h2>Contacto</h2>
+     <p>Si necesitas información o deseas una consulta,
+     puedes comunicarte con nosotros.</p>
+
+
+         <p>Teléfono: 442-123-4567</p>
+         <p>Correo: diego@salud.com</p>
+     
+         <h3>Solicita información</h3>
+         <form class="th">
+             <fieldset>
+                 <legend>Datos de contacto</legend>
+             
+                 <label for="nombre">Nombre:</label>
+                 <input type="text" id="nombre" name="nombre" required>
+             
+                 <label for="correo">Correo:</label>
+                 <input type="email" id="correo" name="correo" required>
+             
+                 <label for="telefono">Teléfono:</label>
+                 <input type="tel" id="telefono" name="telefono">
+             
+                 <label for="motivo">Motivo de contacto:</label>
+                 <select id="motivo" name="motivo" required>
+                     <option value="">Selecciona una opción</option>
+                     <option value="precios">Consultar precios</option>
+                     <option value="servicios">Información de servicios</option>
+                     <option value="horarios">Consultar horarios</option>
+                 </select>
+             
+                 <label for="mensaje">Mensaje:</label>
+                 <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+             
+                 <button type="submit">Enviar solicitud</button>
+                 <button type="reset">Limpiar formulario</button>
+             </fieldset>
+         </form>
+     </section>
+
+
+ <footer>
+     <p>Consultorio Pichas -2026</p>
+ </footer>
+</body>
+</html>

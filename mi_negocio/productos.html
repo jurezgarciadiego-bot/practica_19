@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Productos - Consultorio Pichas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Consultorio Pichas</h1>
+        <p>Cuidamos tu salud</p>
+        <img src="imagenes/doctor.jpg" width="150" alt="Doctor">
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="productos.html" class="activo">Productos</a>
+        <a href="informacion.html">Información</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+
+        <h2>Nuestros servicios</h2>
+
+
+        <div class="contenedor-productos">
+
+
+            <div class="producto">
+                <img src="imagenes/consulta.jpg" alt="Consulta general">
+                <h3>Consulta general</h3>
+                <p>Atención médica general.</p>
+                <p class="precio">$350</p>
+
+
+                <label for="cantidad-1">Cantidad:</label>
+                <input type="number" id="cantidad-1" min="0" step="1" value="0">
+
+
+                <p>Subtotal: $<span id="subtotal-1">0.00</span></p>
+            </div>
+
+
+            <div class="producto">
+                <img src="imagenes/revision.jpg" alt="Revisión médica">
+                <h3>Revisión médica</h3>
+                <p>Revisión del estado de salud.</p>
+                <p class="precio">$400</p>
+
+
+                <label for="cantidad-2">Cantidad:</label>
+                <input type="number" id="cantidad-2" min="0" step="1" value="0">
+
+
+                <p>Subtotal: $<span id="subtotal-2">0.00</span></p>
+            </div>
+
+
+            <div class="producto">
+                <img src="imagenes/control.jpg" alt="Control médico">
+                <h3>Control médico</h3>
+                <p>Control y seguimiento médico.</p>
+                <p class="precio">$300</p>
+
+
+                <label for="cantidad-3">Cantidad:</label>
+                <input type="number" id="cantidad-3" min="0" step="1" value="0">
+
+
+                <p>Subtotal: $<span id="subtotal-3">0.00</span></p>
+            </div>
+
+
+            <div class="producto">
+                <img src="imagenes/certificado.jpg" alt="Certificado médico">
+                <h3>Certificado médico</h3>
+                <p>Expedición de certificado médico.</p>
+                <p class="precio">$250</p>
+
+
+                <label for="cantidad-4">Cantidad:</label>
+                <input type="number" id="cantidad-4" min="0" step="1" value="0">
+
+
+                <p>Subtotal: $<span id="subtotal-4">0.00</span></p>
+            </div>
+
+
+            <div class="producto">
+                <img src="imagenes/consulta.jpg" alt="Consulta pediátrica">
+                <h3>Consulta pediátrica</h3>
+                <p>Atención médica para niños.</p>
+                <p class="precio">$450</p>
+
+
+                <label for="cantidad-5">Cantidad:</label>
+                <input type="number" id="cantidad-5" min="0" step="1" value="0">
+
+
+                <p>Subtotal: $<span id="subtotal-5">0.00</span></p>
+            </div>
+
+
+            <div class="producto">
+                <img src="imagenes/revision.jpg" alt="Consulta preventiva">
+                <h3>Consulta preventiva</h3>
+                <p>Revisión para cuidar tu salud.</p>
+                <p class="precio">$300</p>
+
+
+                <label for="cantidad-6">Cantidad:</label>
+                <input type="number" id="cantidad-6" min="0" step="1" value="0">
+
+
+                <p>Subtotal: $<span id="subtotal-6">0.00</span></p>
+            </div>
+
+
+        </div>
+
+
+        <section class="resumen-compra">
+            <h2>Resumen de mi compra</h2>
+
+
+            <button type="button" id="calcular-compra">
+                Calcular compra
+            </button>
+
+            <button type="button" id="vaciar-pedido">
+                Vaciar pedido
+            </button>
+
+
+            <p>Importe: $<span id="importe-compra">0.00</span></p>
+
+
+            <p>Descuento: $<span id="descuento-compra">0.00</span></p>
+
+
+            <p>Total a pagar: $<span id="total-compra">0.00</span></p>
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <p>Consultorio Pichas - 2026</p>
+    </footer>
+
+
+</body>
+</html>
